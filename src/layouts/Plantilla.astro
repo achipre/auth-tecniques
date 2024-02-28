@@ -1,0 +1,28 @@
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body class="max-w-4xl m-auto text-xl">
+    <header class="flex flex-col">
+      <h1
+        class="text-9xl text-[142px] line-clamp-1 font-extrabold flex justify-between flex-wrap"
+      >
+        <span>DIARIO</span>
+        <span>TECH</span>
+      </h1>
+      <nav class="flex justify-between mx-2 text-4xl">
+        <a class="flex-1" href="/">INICIO</a>
+        <span class="flex-1 flex justify-center">•</span>
+        <a class="flex-1" href="/publicaciones">PUBLICACIONES</a>
+        <span class="flex-1 flex justify-center">•</span>
+        <a class="flex-1" href="/contactos">CONTACTOS</a>
+      </nav>
+    </header>
+
+    <article>
+      <slot />
+      <!-- tu contenido es inyectado aquí -->
+    </article>
+  </body>
+</html>
